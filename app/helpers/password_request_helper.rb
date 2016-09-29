@@ -1,0 +1,2 @@
+module PasswordRequestHelper
+end
