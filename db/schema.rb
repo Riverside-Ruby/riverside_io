@@ -11,24 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160929025524) do
+ActiveRecord::Schema.define(version: 20161013031444) do
 
   create_table "credentials", force: :cascade do |t|
     t.string   "username"
     t.string   "password"
     t.date     "expiration"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "password_request_id"
   end
 
   create_table "password_requests", force: :cascade do |t|
     t.string   "email"
-    t.integer  "credential_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "token"
   end
-
-  add_index "password_requests", ["credential_id"], name: "index_password_requests_on_credential_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

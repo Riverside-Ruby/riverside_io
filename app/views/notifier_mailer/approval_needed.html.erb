@@ -1,0 +1,4 @@
+<p><%= @password_request.email %> would like you to grant him a wifi password.</p>
+<div><%= link_to "Click to approve", approve_password_request_url(@password_request, token: @password_request.token) %></div>
+<div><%= link_to "Click to decline", "#" %></div>
+
