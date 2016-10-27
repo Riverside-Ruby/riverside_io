@@ -18,9 +18,8 @@ class PasswordRequestsController < ApplicationController
 
     if @password_request
       credential = Credential.available.first
-      @password_request.update!(credential: credential) # Associate password request with a credential
-      # Send the credential to the requestor via email
-      # Mark as approved
+      credential.update!(password_request: @password_request)
+      NotifierMailer.credentials_approved(@password_request).deliver_now
       redirect_to root_url, notice: "Good job"
     else
       redirect_to root_url, alert: "This email is no longer valid"

@@ -1,0 +1,6 @@
+%h1 Upload your credential
+
+= simple_form_for @credential_import do |f|
+  = f.input :file, as: :file
+  = f.input :expiration, as: :string
+  = f.submit "Upload credentials"

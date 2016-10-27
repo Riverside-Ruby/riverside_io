@@ -1,0 +1,4 @@
+* Limit credentials to logged in admin
+* List of credentials for admin
+* Basic styling
+* When running low on passwords, send a warning
