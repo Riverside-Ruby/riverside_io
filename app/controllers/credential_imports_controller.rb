@@ -1,5 +1,7 @@
 require 'csv'
 class CredentialImportsController < ApplicationController
+  before_action :authenticate_user!
+
   def new
     @credential_import = CredentialImport.new
   end

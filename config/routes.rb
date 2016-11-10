@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   end
 
   resources :credential_imports, only: [:new, :create]
+  resources :credentials, only: [:index]
 
   devise_for :users
   root to: "static#index"
-
 end
