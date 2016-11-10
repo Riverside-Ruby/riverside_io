@@ -27,6 +27,7 @@ gem 'devise', '~> 4.2.0'
 gem 'simple_form', '~> 3.3.1'
 gem 'has_secure_token', '~> 1.0.0'
 gem 'chronic'
+gem "attr_encrypted", "~> 3.0.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

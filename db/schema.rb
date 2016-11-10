@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161013031444) do
+ActiveRecord::Schema.define(version: 20161110041739) do
 
   create_table "credentials", force: :cascade do |t|
     t.string   "username"
-    t.string   "password"
     t.date     "expiration"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.integer  "password_request_id"
+    t.string   "encrypted_password"
+    t.string   "encrypted_password_iv"
   end
 
   create_table "password_requests", force: :cascade do |t|
