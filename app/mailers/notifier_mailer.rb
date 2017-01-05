@@ -11,4 +11,8 @@ class NotifierMailer < ApplicationMailer
 
     mail to: @password_request.email, subject: "Your Wifi Credentials"
   end
+
+  def low_inventory_alert
+    mail to: "matt@bitpeel.com", subject: "Out of Passwords"
+  end
 end

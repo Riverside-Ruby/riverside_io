@@ -10,4 +10,8 @@ class NotifierMailerPreview < ActionMailer::Preview
     password_request.credential = Credential.last
     NotifierMailer.credentials_approved(password_request)
   end
+
+  def low_inventory_alert
+    NotifierMailer.low_inventory_alert
+  end
 end

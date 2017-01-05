@@ -1,4 +1,6 @@
 class Credential < ActiveRecord::Base
+  MINIMUM_CREDENTIAL_COUNT = 10
+
   belongs_to :password_request
 
   validates :username, presence: true
