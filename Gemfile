@@ -30,6 +30,10 @@ gem 'has_secure_token', '~> 1.0.0'
 gem 'chronic'
 gem "attr_encrypted", "~> 3.0.0"
 
+# add bootstrap-sass gem
+# for installation info: https://github.com/twbs/bootstrap-sass#a-ruby-on-rails
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
