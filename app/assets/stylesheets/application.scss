@@ -13,3 +13,21 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+h1 {
+  border-top:1px solid #CCC;
+  width:100%;
+  float:left;
+  padding-top:20%;
+  padding-bottom: 5%;
+  text-align: center
+}
+
+#io-header {
+  border: 1px solid #333333;
+}
+
+.container {
+  text-align: center;
+  padding: 2% 2% 2% 2%
+}

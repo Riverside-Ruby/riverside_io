@@ -1,0 +1,11 @@
+.pull-left
+  Riverside
+  %span#io-header
+    i/o
+.pull-right
+  - if !user_signed_in?
+    = link_to "Login", new_user_session_path
+    = link_to "Sign Up", new_user_registration_path
+  - else
+    = link_to "Log out", destroy_user_session_url, :method => :delete
+.clearfix
