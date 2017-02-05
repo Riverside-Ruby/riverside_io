@@ -8,6 +8,6 @@
     = csrf_meta_tags
   %body
     = bootstrap_flash
-    = yield
-    %footer
-      = link_to "request wifi password", new_password_request_path
+    .container
+      = render :partial => "layouts/header"
+      = yield
