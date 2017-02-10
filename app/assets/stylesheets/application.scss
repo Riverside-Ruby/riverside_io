@@ -14,20 +14,83 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+html *{
+  font-family: Lato, Helvetica, sans-serif !important;
+  font-color: #323b43;
+}
+
 h1 {
-  border-top:1px solid #CCC;
+//  border-top:1px solid #CCC;
   width:100%;
   float:left;
   padding-top:20%;
-  padding-bottom: 5%;
   text-align: center
 }
 
+h4 {
+  font-size: 16px;
+  padding: 3% 0% 3% 0%;
+  font-weight: 100;
+}
+
 #io-header {
-  border: 1px solid #333333;
+  border: 3px solid #333333;
+}
+
+#riverside-header {
+}
+
+@media (max-width: 640px)
+{
+  #sub-hero-header {display: none}
+  #super-hero-header {padding-bottom: 5%}
+}
+.hero {
+  width: 100%;
+}
+.header-main {
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: 0.1px;
+  font-family: 'Chivo', sans-serif !important;
 }
 
 .container {
   text-align: center;
   padding: 2% 2% 2% 2%
+}
+
+.button {
+  font-family: Sans-serif;
+  border: 2px solid #428BCA;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+.button-main:hover {
+  background: none;
+  color: #428BCA;
+  border: 2px solid #428BCA;
+}
+
+.button-header:hover {
+  background: #428BCA;
+  color: #FFF;
+  border: 2px solid #428BCA;
+}
+
+.button-main {
+  font-size: 16px;
+  width: 250px;
+  background: #428BCA;
+  color: #fff;
+}
+
+.button-header {
+  font-size: 14px;
+  width: 100px;
+  background: none;
+  color: #428BCA;
 }

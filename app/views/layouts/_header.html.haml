@@ -1,11 +1,10 @@
-.pull-left
-  Riverside
-  %span#io-header
+.pull-left#riverside-header.header-main
+  riverside
+  %span.header-main#io-header
     i/o
 .pull-right
   - if !user_signed_in?
-    = link_to "Login", new_user_session_path
-    = link_to "Sign Up", new_user_registration_path
+    = link_to "Login", new_user_session_path, class: 'btn btn-primary button button-header'
   - else
-    = link_to "Log out", destroy_user_session_url, :method => :delete
+    = link_to "Log out", destroy_user_session_url, :method => :delete, class: 'btn btn-primary button button-header'
 .clearfix

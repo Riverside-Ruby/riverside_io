@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "New Password Request", type: :feature do
   it "allows a guest to request a new password" do
     visit root_path
-    click_link "Request wifi password"
+    click_link "Request Wifi password"
     fill_in "Email", with: "user@example.com"
 
     expect { click_button "Submit" }.to change(PasswordRequest, :count).by(1)
