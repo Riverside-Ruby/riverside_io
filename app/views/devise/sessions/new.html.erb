@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="form-group col-md-4">
+      <h2>Login</h2>
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= f.input :email, label: false, required: false, autofocus: true, placeholder: 'email', class: 'form-control' %>
+        <%= f.input :password, label: false, required: false, placeholder: 'password', class: 'form-control' %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+        <%= f.button :submit, "Log in", class: 'btn btn-primary' %>
+      <% end %>
+      <%= render "devise/shared/links" %>
+  </div>
+</div>

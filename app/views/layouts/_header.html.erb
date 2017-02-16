@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to "Riverside i/o", root_path%>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <% if !user_signed_in? %>
+        <li><%= link_to "Login", new_user_session_path, class: 'btn' %></li>
+      <% else %>
+        <li><%= link_to "Logout", destroy_user_session_url, :method => :delete, class: 'btn' %></li>
+      <% end %>
+      <div class="clearfix"></div>
+    </ul>
+  </div>
+</nav>
