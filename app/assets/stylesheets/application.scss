@@ -14,16 +14,59 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-html *{
+html, body {
   font-family: Lato, Helvetica, sans-serif !important;
-  font-color: #323b43;
+  //background-color: #00CEB9;
 }
 
+.jumbotron {
+  background-color: transparent;
+}
+
+
+.button {
+  font-family: Sans-serif;
+  border: 2px solid #ea4310;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  border-radius: 25px;
+}
+
+.button-main {
+  font-size: 16px;
+  width: 250px;
+  background: #ea4310;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.button-main:hover {
+  background: none;
+  color: #ea4310;
+  border: 2px solid #ea4310;
+}
+
+.button-header {
+  font-size: 14px;
+  width: 100px;
+  background: none;
+  color: #ea4310;
+  padding: 5px 5px;
+}
+
+.button-header:hover {
+  background: #ea4310;
+  color: red;
+  border: 2px solid #ea4310;
+}
+
+
+/*
 h1 {
 //  border-top:1px solid #CCC;
   width:100%;
   float:left;
-  padding-top:20%;
+  margin-top: 15%;
   text-align: center
 }
 
@@ -44,10 +87,13 @@ h4 {
 {
   #sub-hero-header {display: none}
   #super-hero-header {padding-bottom: 5%}
+  .login-container {width: 250px;}
 }
+
 .hero {
   width: 100%;
 }
+
 .header-main {
   font-weight: 800;
   font-size: 32px;
@@ -60,37 +106,28 @@ h4 {
   padding: 2% 2% 2% 2%
 }
 
-.button {
-  font-family: Sans-serif;
-  border: 2px solid #428BCA;
+
+/*
+.login-container {
+  border: 3px solid #f1f1f1;
+
+  width: 33%;
   text-align: center;
-  transition: all 0.3s ease 0s;
-  padding: 10px 10px;
-  border-radius: 25px;
+  display: inline;
+}
+*/
+/*
+.login-container {
+    margin: 8px auto;
+    border: 3px solid #f1f1f1;
+    padding: 8px;
+    margin-top: 15%;
+    width: 250px;
+    text-align: center;
+    background-color: #ECECEC;
 }
 
-.button-main:hover {
-  background: none;
-  color: #428BCA;
-  border: 2px solid #428BCA;
+.form-horizontal {
+  margin-bottom: 15px;
 }
-
-.button-header:hover {
-  background: #428BCA;
-  color: #FFF;
-  border: 2px solid #428BCA;
-}
-
-.button-main {
-  font-size: 16px;
-  width: 250px;
-  background: #428BCA;
-  color: #fff;
-}
-
-.button-header {
-  font-size: 14px;
-  width: 100px;
-  background: none;
-  color: #428BCA;
-}
+*/
